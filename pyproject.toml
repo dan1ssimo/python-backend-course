@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "python-backend-course"
+version = "0.1.0"
+description = ""
+authors = ["Danil Dorofeev <danildorofeev2002@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+uvicorn = "^0.30.6"
+requests = "^2.32.3"
+urllib3 = "1.26.15"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.5"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
+
+[MASTER]
+init-hook='import sys; sys.path.append(".")'
