@@ -25,4 +25,4 @@ jobs:
       - name: Install dependencies with poetry
         run: poetry install
       - name: Run tests
-        run: poetry run pytest -vv --cov=hw3/demo_service/ tests/test_coverage.py 
+        run: poetry run pytest hw_2/tests.py
