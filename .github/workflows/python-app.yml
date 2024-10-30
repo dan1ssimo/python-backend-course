@@ -24,5 +24,6 @@ jobs:
         uses: abatilo/actions-poetry@v2
       - name: Install dependencies with poetry
         run: poetry install
+      # Запуск тестов Homework 2
       - name: Run tests
         run: poetry run pytest hw_2/tests.py
